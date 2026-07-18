@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include "menu.h"
+#include "view_showtimes.h"
 
 int menu()
 {
@@ -32,6 +33,12 @@ int menu()
         }
 
         printf("Please choose a number between 1 and 7.\n");
+    }
+
+    switch (option){
+        case 1:
+        showMoviesList();
+        break;
     }
 
     return option;
