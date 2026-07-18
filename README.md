@@ -1,4 +1,4 @@
-# Moving Booking System Group Project for CSC 1031
+# Movie Booking System Group Project for CSC 1031
 This is the repository we created for the group project for CSC 1031 - Software Development Fundamentals.
 
 ## Program Summary
