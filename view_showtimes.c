@@ -1,15 +1,8 @@
 #include <stdio.h>
 #include "view_showtimes.h"
 
-
-void showMoviesList()
+void showMoviesList(struct Movie movies[])
 {
-    struct Movie movies[MOVIE_COUNT] = {
-        {1, "Spider-Man: Brand New Day", "10:00 AM", "6:30 PM"},
-        {2, "The Odyssey", "1:30 PM", "8:00 PM"},
-        {3, "Moana 2", "11:00 AM", "4:30 PM"}
-    };
-
     printf("+----------+---------------------------+------------+------------+\n");
     printf("| Movie ID | Movie Name                | Showtime 1 | Showtime 2 |\n");
     printf("+----------+---------------------------+------------+------------+\n");
@@ -19,8 +12,8 @@ void showMoviesList()
         printf("| %-8d | %-25s | %-10s | %-10s |\n",
                movies[i].id,
                movies[i].name,
-               movies[i].showtime1,
-               movies[i].showtime2);
+               movies[i].showtimes[0].time,
+               movies[i].showtimes[1].time);
     }
 
     printf("+----------+---------------------------+------------+------------+\n");
