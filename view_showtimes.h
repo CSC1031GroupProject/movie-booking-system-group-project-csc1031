@@ -6,9 +6,15 @@
 #define ROWS 5
 #define COLS 10
 
+struct Seat {
+    char status;  
+    char customerName[50];
+    double pricePaid;
+};
+
 struct Showtime {
     char time[10];
-    char seats[ROWS][COLS];
+    struct Seat seats[ROWS][COLS];
 };
 
 struct Movie {
