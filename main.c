@@ -2,6 +2,7 @@
 #include "menu.h"
 #include "view_showtimes.h"
 #include "view_seatmap.h"
+#include "book_seat.h"
 
 void initializeSeats(struct Movie movies[]);
 
@@ -29,6 +30,7 @@ int main(){
                 break;
 
             case 3:
+                bookSeat(movies);
                 break;
 
             case 4:
@@ -53,7 +55,9 @@ void initializeSeats(struct Movie movies[]) {
         for (int s = 0; s < SHOWTIMES_PER_MOVIE; s++) {
             for (int r = 0; r < ROWS; r++) {
                 for (int c = 0; c < COLS; c++) {
-                    movies[m].showtimes[s].seats[r][c] = '.';
+                    movies[m].showtimes[s].seats[r][c].status = '.';
+                    movies[m].showtimes[s].seats[r][c].customerName[0] = '\0';
+                    movies[m].showtimes[s].seats[r][c].pricePaid = 0.0;
                 }
             }
         }
