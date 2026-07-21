@@ -40,7 +40,7 @@ void viewSeatMap(struct Movie movies[]) {
         printf("Row %c  ", rowLabel);
 
         for (int col = 0; col < COLS; col++) {
-            printf("%c  ", movies[mIndex].showtimes[sIndex].seats[r][col]);
+            printf("%c  ", movies[mIndex].showtimes[sIndex].seats[r][col].status);
         }
 
         if (r == 0 || r == 1) {
