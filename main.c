@@ -1,34 +1,61 @@
 #include <stdio.h>
 #include "menu.h"
 #include "view_showtimes.h"
+#include "view_seatmap.h"
+
+void initializeSeats(struct Movie movies[]);
 
 int main(){
+    struct Movie movies[MOVIE_COUNT] = {
+        {1, "Spider-Man: Brand New Day", {{"10:00 AM"}, {"6:30 PM"}}},
+        {2, "The Odyssey",               {{"1:30 PM"},  {"8:00 PM"}}},
+        {3, "Moana 2",                   {{"11:00 AM"}, {"4:30 PM"}}}
+    };
+    
+    initializeSeats(movies);
+
     int option = 0;
-    option = menu();
+    
+    while (1) {
+        option = menu();
 
-    switch (option){
-        case 1:
-        showMoviesList();
-        break;
-        
-        case 2:
-        break;
+        switch (option){
+            case 1:
+                showMoviesList(movies);
+                break;
+            
+            case 2:
+                viewSeatMap(movies);
+                break;
 
-        case 3:
-        break;
+            case 3:
+                break;
 
-        case 4:
-        break;
+            case 4:
+                break;
 
-        case 5:
-        break;
+            case 5:
+                break;
 
-        case 6:
-        break;
+            case 6:
+                break;
 
-        case 7:
-        print("Exiting program...\n");
-        return 0;
-        break;
+            case 7:
+                printf("Exiting program...\n");
+                return 0;
+        }
+    }
+    return 0;
+}
+
+void initializeSeats(struct Movie movies[]) {
+    for (int m = 0; m < MOVIE_COUNT; m++) {
+        for (int s = 0; s < SHOWTIMES_PER_MOVIE; s++) {
+            for (int r = 0; r < ROWS; r++) {
+                for (int c = 0; c < COLS; c++) {
+                    movies[m].showtimes[s].seats[r][c] = '.';
+                }
+            }
+        }
     }
 }
