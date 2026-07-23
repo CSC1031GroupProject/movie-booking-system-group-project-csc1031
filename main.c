@@ -4,6 +4,7 @@
 #include "view_seatmap.h"
 #include "book_seat.h"
 #include "cancel_booking.h"
+#include "search_booking.h"
 
 void initializeSeats(struct Movie movies[]);
 
@@ -39,6 +40,7 @@ int main(){
                 break;
 
             case 5:
+                searchBooking(movies);
                 break;
 
             case 6:
