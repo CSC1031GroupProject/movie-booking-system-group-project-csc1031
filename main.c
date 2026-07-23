@@ -3,6 +3,7 @@
 #include "view_showtimes.h"
 #include "view_seatmap.h"
 #include "book_seat.h"
+#include "cancel_booking.h"
 
 void initializeSeats(struct Movie movies[]);
 
@@ -34,6 +35,7 @@ int main(){
                 break;
 
             case 4:
+                cancelBooking(movies);
                 break;
 
             case 5:
