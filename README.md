@@ -33,7 +33,7 @@ Execute the compiled binary:
 ## Group Members
 
 - **Linuka Wijesinghe**   — [GitHub Profile](https://github.com/linuka135-cyber) | **Index No:** AS20250368
-- **Lochana Ranathunga**  — [GitHub Profile](https://github.com/lochanalmr)      | **Index No:** AS20250450
+- **Lochana Ranatunga**  — [GitHub Profile](https://github.com/lochanalmr)      | **Index No:** AS20250450
 - **Sadeep Shyamal**      — [GitHub Profile](https://github.com/sadeepshyamal)    | **Index No:** AS20250500
 - **Kavisha Alwis**       — [GitHub Profile](https://github.com/kkkalwis)         | **Index No:** AS20250543
 - **Daham Makumbura**     — [GitHub Profile](https://github.com/daham1026)        | **Index No:** AS20250573
