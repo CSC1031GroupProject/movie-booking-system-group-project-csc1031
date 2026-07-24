@@ -3,6 +3,7 @@
 
 void showMoviesList(struct Movie movies[])
 {
+    printf("\n--- View Showtimes ---\n");
     printf("+----------+---------------------------+------------+------------+\n");
     printf("| Movie ID | Movie Name                | Showtime 1 | Showtime 2 |\n");
     printf("+----------+---------------------------+------------+------------+\n");
