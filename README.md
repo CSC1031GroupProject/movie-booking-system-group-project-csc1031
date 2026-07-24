@@ -12,8 +12,29 @@ This program is a command-line program built in C, that can be used in a theater
 5. Search Booking - Find a booking by customer name or seat number, showing the price paid
 6. View Revenue Report - Calculate and display total tickets sold and total revenue per showtime
 
-## Implementation Details
+
+## How to Build and Run
+
+### Compilation
+Build the complete project using `gcc`:
+
+```bash
+gcc *.c -o movie_booking
+```
+
+### Running the Program
+Execute the compiled binary:
+
+```bash
+./movie_booking
+```
 
 
 ## Group Members
+
+- **Linuka Wijesinghe**   — [GitHub Profile](https://github.com/linuka135-cyber) | **Index No:** AS20250368
+- **Lochana Ranathunga**  — [GitHub Profile](https://github.com/lochanalmr)      | **Index No:** AS20250450
+- **Sadeep Shyamal**      — [GitHub Profile](https://github.com/sadeepshyamal)    | **Index No:** AS20250500
+- **Kavisha Alwis**       — [GitHub Profile](https://github.com/kkkalwis)         | **Index No:** AS20250543
+- **Daham Makumbura**     — [GitHub Profile](https://github.com/daham1026)        | **Index No:** AS20250573
 
